@@ -1,0 +1,9 @@
+# action.yml
+name: 'Generate Version Tag'
+description: 'Generate more human-readable tag containing the creation date'
+outputs:
+  version: # id of output
+    description: 'human-readable version tag containing the creation date'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
